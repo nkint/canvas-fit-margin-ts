@@ -12,7 +12,7 @@ This module exports a named import that takes an option object and it has some l
 
 [![NPM](https://nodei.co/npm/canvas-fit-margin-ts.png)](https://nodei.co/npm/canvas-fit-margin-ts/)
 
-### resize = fit(canvas[, options])
+### resize = createFit(canvas[, options])
 
 Creates a `resize` function for your `canvas` element. Calling this function
 will resize the canvas to fit its parent element.
