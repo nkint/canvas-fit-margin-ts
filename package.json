@@ -1,0 +1,38 @@
+{
+  "name": "canvas-fit-margin-ts",
+  "version": "1.0.0",
+  "description": "`canvas-fit` rewritten in Typescript: small module for fitting a canvas element with margin within the bounds of its parent.",
+  "main": "./src/index.js",
+  "scripts": {
+    "build": "browserify ./src/index.ts -p [ tsify ] | uglifyjs -cm > dist/index.js",
+    "start": "budo src/index.ts:index.js --open -- -p [ tsify ]",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nkint/canvas-fit-margin-ts.git"
+  },
+  "author": "nkint <nootropic.kint@gmail.com>",
+  "homepage": "https://github.com/nkint/canvas-fit-margin-ts",
+  "license": "MIT",
+  "bugs": "https://github.com/nkint/canvas-fit-margin-ts/issues",
+  "devDependencies": {
+    "browserify": "^16.2.2",
+    "budo": "^11.3.2",
+    "tsify": "^4.0.0",
+    "typescript": "^3.0.1",
+    "uglify-js": "^3.4.7"
+  },
+  "dependencies": {
+    "element-size": "^1.1.1"
+  },
+  "keywords": [
+    "canvas",
+    "fit",
+    "screen",
+    "window",
+    "browser",
+    "resize",
+    "typescript"
+  ]
+}
