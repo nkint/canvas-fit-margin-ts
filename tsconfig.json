@@ -3,7 +3,7 @@
     "strict": true,
     "baseUrl": ".",
     "outDir": "build/dist",
-    "module": "commonjs",
+    "module": "esnext",
     "target": "es3",
     "lib": ["es2017", "dom"],
     "sourceMap": true,
