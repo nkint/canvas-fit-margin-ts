@@ -5,7 +5,7 @@
   "main": "./src/index.js",
   "scripts": {
     "build": "browserify ./src/index.ts -p [ tsify ] | uglifyjs -cm > dist/index.js",
-    "start": "budo src/index.ts:index.js --open -- -p [ tsify ]",
+    "start": "budo ./src/demo.ts:index.js --open --live --dir public -- -p [ tsify ]",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
