@@ -37,8 +37,8 @@
     "typescript"
   ],
   "files": [
-    "dist/index.js",
-    "dist/index.d.ts",
-    "dist/index.d.ts.map"
+    "index.js",
+    "index.d.ts",
+    "index.d.ts.map"
   ]
 }
