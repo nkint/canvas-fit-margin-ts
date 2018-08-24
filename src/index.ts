@@ -27,7 +27,7 @@ export function createFit(canvas: HTMLCanvasElement, options?: CanvasFitOptions)
   canvas.style.left = '0'
   canvas.style.margin = `${margin}px`
 
-  function resize() {
+  function resize(): number[] {
     const isSVG = canvas.nodeName.toUpperCase() === 'SVG'
     const p = parent || canvas.parentNode
 

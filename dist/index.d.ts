@@ -3,5 +3,5 @@ export declare type CanvasFitOptions = {
     margin?: number;
     scale?: number;
 };
-export declare function createFit(canvas: HTMLCanvasElement, options?: CanvasFitOptions): any[];
+export declare function createFit(canvas: HTMLCanvasElement, options?: CanvasFitOptions): () => number[];
 //# sourceMappingURL=index.d.ts.map

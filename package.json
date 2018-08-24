@@ -1,6 +1,6 @@
 {
   "name": "canvas-fit-margin-ts",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "`canvas-fit` rewritten in Typescript: small module for fitting a canvas element with margin within the bounds of its parent.",
   "scripts": {
     "clean": "rm dist/index.js dist/index.d.ts dist/index.d.ts.map",
