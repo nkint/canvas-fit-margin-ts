@@ -1,3 +1,4 @@
+// import * as getSize from 'element-size'
 import getSize = require('element-size')
 
 export type CanvasFitOptions = {
