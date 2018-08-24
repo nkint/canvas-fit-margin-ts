@@ -4,8 +4,8 @@
   "description": "`canvas-fit` rewritten in Typescript: small module for fitting a canvas element with margin within the bounds of its parent.",
   "main": "./src/index.js",
   "scripts": {
-    "clean": "rm -rf dist",
-    "build": "tsc -d --declarationMap --declarationDir dist src/index.ts; rm src/index.js; browserify ./src/index.ts -p [ tsify ] | uglifyjs -cm > dist/index.js",
+    "clean": "rm index.js index.d.ts index.d.ts.map",
+    "build": "tsc -d --declarationMap --declarationDir . src/index.ts; rm src/index.js; browserify ./src/index.ts -p [ tsify ] | uglifyjs -cm > index.js",
     "start": "budo ./src/demo.ts:index.js --open --live --dir public -- -p [ tsify ]",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
