@@ -12,7 +12,7 @@ const defaultOptions: CanvasFitOptions = {
   scale: 1,
 }
 
-export function fit(canvas: HTMLCanvasElement, options?: CanvasFitOptions) {
+export function createFit(canvas: HTMLCanvasElement, options?: CanvasFitOptions) {
   // TODO: object assign could be optimized
   const opts = {
     ...defaultOptions,
