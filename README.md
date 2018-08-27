@@ -40,8 +40,8 @@ displays.
 ```typescript
 const opts: CanvasFitOptions = {
   parent: document.getElementById('canvas-container'),
-  margin: 10
-  scale: window.devicePixelRatio
+  margin: 10,
+  scale: window.devicePixelRatio,
 }
 
 window.addEventListener('resize', createFit(canvas, opts), false)
