@@ -59,5 +59,7 @@ export function createFit(canvas: HTMLCanvasElement, options?: CanvasFitOptions)
     return [width, height]
   }
 
+  resize()
+
   return resize
 }
