@@ -4,9 +4,13 @@
 Small module for fitting a canvas element within the bounds of its parent.
 Useful, for example, for making a canvas fill the screen.
 
-Works with SVG elements too!
+This module exports a named function that takes as input the HTMLCanvasElement
+and an option object.
+It has some limitations in respect of original [canvas-fit](https://github.com/hughsk/canvas-fit):
 
-This module exports a named import that takes an option object and it has some limitations in respect of original [canvas-fit](https://github.com/hughsk/canvas-fit).
+- does not work with SVG
+- the resize function return `[width, height]`
+- not dynamic (change the options implies to re-create).
 
 ## Usage
 

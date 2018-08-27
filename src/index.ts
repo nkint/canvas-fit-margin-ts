@@ -28,7 +28,6 @@ export function createFit(canvas: HTMLCanvasElement, options?: CanvasFitOptions)
   canvas.style.margin = `${margin}px`
 
   function resize(): number[] {
-    const isSVG = canvas.nodeName.toUpperCase() === 'SVG'
     const p = parent || canvas.parentNode
 
     let width, height
@@ -45,13 +44,8 @@ export function createFit(canvas: HTMLCanvasElement, options?: CanvasFitOptions)
     width -= margin * 2
     height -= margin * 2
 
-    if (isSVG) {
-      canvas.setAttribute('width', width * scale + 'px')
-      canvas.setAttribute('height', height * scale + 'px')
-    } else {
-      canvas.width = width * scale
-      canvas.height = height * scale
-    }
+    canvas.width = width * scale
+    canvas.height = height * scale
 
     canvas.style.width = width + 'px'
     canvas.style.height = height + 'px'
