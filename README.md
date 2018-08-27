@@ -30,17 +30,22 @@ const canvas = document.createElement('canvas')
 window.addEventListener('resize', createFit(canvas), false)
 ```
 
-You might want to override the `options.parent` element that the canvas should be
-fitting within: in which case, pass that element in as your second argument:
-
-```typescript
-window.addEventListener('resize', createFit(canvas, window), false)
-```
-
+You might want to pass the `options.parent`: the element that the canvas should be fitting within.
+Or you might wanto to pass the `options.margin`: the margin that the canvas will have.
 You can also set the scale of the canvas element relative to its styled size
 on the page using the `option.scale` field – for example, passing in
 `window.devicePixelRatio` here will scale the canvas resolution up on retina
 displays.
+
+```typescript
+const opts: CanvasFitOptions = {
+  parent: document.getElementById('canvas-container'),
+  margin: 10
+  scale: window.devicePixelRatio
+}
+
+window.addEventListener('resize', createFit(canvas, opts), false)
+```
 
 ## License
 
