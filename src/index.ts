@@ -22,7 +22,7 @@ export function createFit(canvas: HTMLCanvasElement, options?: CanvasFitOptions)
 
   const { margin, scale, parent } = opts
 
-  canvas.style.position = canvas.style.position || 'absolute'
+  canvas.style.position = canvas.style.position || 'relative  '
   canvas.style.top = '0'
   canvas.style.left = '0'
   canvas.style.margin = `${margin}px`
