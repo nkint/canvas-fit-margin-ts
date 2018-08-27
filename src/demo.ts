@@ -2,10 +2,6 @@ import { createFit } from './'
 import colors = require('nice-color-palettes')
 
 const colorIndex = Math.round(Math.random() * 100)
-const c1 = colors[colorIndex][0]
-const c2 = colors[colorIndex][1]
-const c3 = colors[colorIndex][3]
-const c4 = colors[colorIndex][4]
 
 function createCanvas(id: string, margin: number = null) {
   const canvas = document.createElement('canvas')
