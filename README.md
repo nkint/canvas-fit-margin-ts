@@ -9,7 +9,7 @@ and an option object.
 It has some limitations in respect of original [canvas-fit](https://github.com/hughsk/canvas-fit):
 
 - does not work with SVG
-- the resize function return `[width, height]`
+- the resize function return `[width, height]` in pixel
 - not dynamic (change the options implies to re-create).
 
 ## Usage
@@ -32,10 +32,7 @@ window.addEventListener('resize', createFit(canvas), false)
 
 You might want to pass the `options.parent`: the element that the canvas should be fitting within.
 Or you might wanto to pass the `options.margin`: the margin that the canvas will have.
-You can also set the scale of the canvas element relative to its styled size
-on the page using the `option.scale` field – for example, passing in
-`window.devicePixelRatio` here will scale the canvas resolution up on retina
-displays.
+You can also set the scale of the canvas element relative to its styled size on the page using the `option.scale` field – for example, passing in `window.devicePixelRatio` here will scale the canvas resolution up on retina displays.
 
 ```typescript
 const opts: CanvasFitOptions = {
